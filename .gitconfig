@@ -1,0 +1,30 @@
+[user]
+	name = ashenafiDL
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[merge]
+	conflictstyle = zdiff3
+[pull]
+	rebase = true
+[include]
+        path = ~/.config/.gitconfig.local
