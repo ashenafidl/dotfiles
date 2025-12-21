@@ -1,5 +1,3 @@
-[user]
-	name = ashenafiDL
 [column]
 	ui = auto
 [branch]
@@ -27,4 +25,4 @@
 [pull]
 	rebase = true
 [include]
-        path = ~/.config/.gitconfig.local
+        path = ~/.gitconfig.local
