@@ -19,3 +19,5 @@ alias ohmyzsh="sudo nano ~/.oh-my-zsh"
 
 # Git aliases
 alias dot='git --git-dir=$HOME/.config/dotfiles.git/ --work-tree=$HOME'
+
+
