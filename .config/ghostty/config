@@ -1,16 +1,14 @@
 font-family = Lilex Regular
 
-maximize = true
-window-decoration = none
-
+window-decoration= none
 window-padding-x = 8
 window-padding-y = 12
 
 shell-integration-features = sudo
 
-keybind = ctrl+up=new_split:up
-keybind = ctrl+right=new_split:right
-keybind = ctrl+down=new_split:down
-keybind = ctrl+left=new_split:left
+keybind = ctrl+shift+up=new_split:up
+keybind = ctrl+shift+right=new_split:right
+keybind = ctrl+shift+down=new_split:down
+keybind = ctrl+shift+left=new_split:left
 
-keybind = ctrl+r=reload_config
+keybind = ctrl+shift+r=reload_config

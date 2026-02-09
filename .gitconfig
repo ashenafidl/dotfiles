@@ -26,3 +26,5 @@
 	rebase = true
 [include]
 	path = ~/.gitconfig.local
+[safe]
+	directory = /opt/dspace-src/DSpace-dspace-9.2

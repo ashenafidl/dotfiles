@@ -1,0 +1,17 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[character]
+success_symbol = "[🔥](bold green)"
+error_symbol = "[💩](bold red) "
+
+[cmd_duration]
+min_time = 500
+format = 'took [$duration](bold yellow)'
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = '[🍒 PICKING](bold red)'
+
+[git_metrics]
+added_style = 'bold blue'
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '

@@ -8,11 +8,15 @@ ZSH_THEME="gentoo"
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Which plugins would you like to load?
-plugins=(git docker docker-compose)
+plugins=(git docker docker-compose zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
 ## Aliases
+# System aliases
+alias rm="rm -i"
+alias cp="cp -i"
+
 # ZSH aliases
 alias zshconfig="sudo nano ~/.zshrc"
 alias ohmyzsh="sudo nano ~/.oh-my-zsh"
@@ -48,3 +52,15 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+
+# Starship
+eval "$(starship init zsh)"
+
+export PATH="$PATH:$HOME/.puro/bin" # Added by Puro
+export PATH="$PATH:$HOME/.puro/shared/pub_cache/bin" # Added by Puro
+export PATH="$PATH:$HOME/.puro/envs/default/flutter/bin" # Added by Puro
+export PURO_ROOT="/home/ashenafi/.puro" # Added by Puro
+
+# opencode
+export PATH=/home/ashenafi/.opencode/bin:$PATH
