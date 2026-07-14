@@ -15,3 +15,7 @@ cherry_pick = '[🍒 PICKING](bold red)'
 [git_metrics]
 added_style = 'bold blue'
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
+[kubernetes]
+disabled = false
+format = '[$context(::$namespace)](bold purple) '

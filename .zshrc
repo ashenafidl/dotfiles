@@ -64,3 +64,14 @@ export PURO_ROOT="/home/ashenafi/.puro" # Added by Puro
 
 # opencode
 export PATH=/home/ashenafi/.opencode/bin:$PATH
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+# Added by GitButler installer
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(but completions zsh)"
+
+. "$HOME/.cargo/env"

@@ -28,3 +28,7 @@
 	path = ~/.gitconfig.local
 [safe]
 	directory = /opt/dspace-src/DSpace-dspace-9.2
+[user]
+	name = ashenafidl
+[gitbutler]
+	aiModelProvider = anthropic
