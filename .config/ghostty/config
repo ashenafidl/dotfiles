@@ -15,3 +15,5 @@ keybind = ctrl+shift+down=new_split:down
 keybind = ctrl+shift+left=new_split:left
 
 keybind = ctrl+shift+r=reload_config
+
+cursor-style = bar

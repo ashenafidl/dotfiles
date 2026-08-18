@@ -26,9 +26,8 @@
 	rebase = true
 [include]
 	path = ~/.gitconfig.local
-[safe]
-	directory = /opt/dspace-src/DSpace-dspace-9.2
 [user]
 	name = ashenafidl
+	email = ashenafi.debella101@gmail.com
 [gitbutler]
 	aiModelProvider = anthropic
