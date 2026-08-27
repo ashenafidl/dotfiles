@@ -8,7 +8,7 @@ ZSH_THEME="robbyrussell"
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Which plugins would you like to load?
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git docker docker-compose zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -31,6 +31,9 @@ alias pi="pnpm install"
 alias pb="pnpm build"
 alias ps="pnpm start"
 alias pd="pnpm dev"
+
+# Opencode
+alias oc="opencode"
 
 # Starship
 eval "$(starship init zsh)"
@@ -58,3 +61,6 @@ export PATH="$PATH:$HOME/.puro/bin" # Added by Puro
 export PATH="$PATH:$HOME/.puro/shared/pub_cache/bin" # Added by Puro
 export PATH="$PATH:$HOME/.puro/envs/default/flutter/bin" # Added by Puro
 export PURO_ROOT="/home/ashenafi/.puro" # Added by Puro
+
+# opencode
+export PATH=/home/ashenafi/.opencode/bin:$PATH
