@@ -7,7 +7,7 @@ window-padding-y = 8
 window-height = 5000
 window-width = 5000
 
-shell-integration-features = sudo
+shell-integration-features = sudo,ssh-env,ssh-terminfo
 
 keybind = ctrl+shift+up=new_split:up
 keybind = ctrl+shift+right=new_split:right
