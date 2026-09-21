@@ -13,8 +13,9 @@
    "pop_to_root_on_close": true,
    "activate_on_single_click": true,
    "font": {
+      "rendering": "native",
       "normal": {
-         "family": "Lora",
+         "family": "Lilex",
          "size": 12
       }
    },
@@ -23,8 +24,37 @@
          "name": "vicinae-dark"
       }
    },
+   "launcher_window": {
+      "opacity": 1,
+      "client_side_decorations": {
+         "enabled": true,
+         "border_width": 1
+      },
+      "compact_mode": {
+         "enabled": false
+      }
+   },
    "favorites": [],
    "providers": {
+      "applications": {
+         "entrypoints": {
+            "GitButler": {
+               "alias": "gb"
+            },
+            "code": {
+               "alias": "vs"
+            },
+            "io.gitlab.news_flash.NewsFlash": {
+               "alias": "nf"
+            },
+            "telegram-desktop_telegram-desktop": {
+               "alias": "tg"
+            },
+            "todoist": {
+               "alias": "td"
+            }
+         }
+      },
       "core": {
          "entrypoints": {
             "about": {
