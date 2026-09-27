@@ -12,6 +12,9 @@
    "$schema": "https://vicinae.com/schemas/config.json",
    "pop_to_root_on_close": true,
    "activate_on_single_click": true,
+   "tray": {
+      "enabled": false
+   },
    "font": {
       "rendering": "native",
       "normal": {
@@ -32,10 +35,41 @@
       },
       "compact_mode": {
          "enabled": false
-      }
+      },
+      "floating_status_bar": true
    },
    "favorites": [],
    "providers": {
+      "@Keyruu/store.raycast.zen-browser": {
+         "preferences": {
+            "aiSearchHistoryLimitResults": "50",
+            "limitResults": "50",
+            "newTabShortcut": "command t",
+            "profileDirectorySuffix": "Default (release)",
+            "profilesDirectory": "/home/ashenafi/.var/app/app.zen_browser.zen/.zen/1cowbaqo.Default (release)",
+            "searchEngine": "Default"
+         },
+         "entrypoints": {
+            "new-private-window": {
+               "enabled": false
+            },
+            "new-tab": {
+               "enabled": false
+            },
+            "new-window": {
+               "enabled": false
+            },
+            "open-workspace": {
+               "enabled": false
+            },
+            "search-bookmarks": {
+               "alias": "b"
+            },
+            "search-history": {
+               "enabled": false
+            }
+         }
+      },
       "applications": {
          "entrypoints": {
             "GitButler": {
@@ -44,24 +78,50 @@
             "code": {
                "alias": "vs"
             },
+            "com.microsoft.VSCode": {
+               "alias": "vs code"
+            },
             "io.gitlab.news_flash.NewsFlash": {
                "alias": "nf"
+            },
+            "org.gnome.TextEditor": {
+               "alias": "te"
             },
             "telegram-desktop_telegram-desktop": {
                "alias": "tg"
             },
             "todoist": {
-               "alias": "td"
+               "alias": "td",
+               "enabled": true
+            }
+         }
+      },
+      "clipboard": {
+         "preferences": {
+            "eraseOnStartup": false,
+            "evictionThreshold": "2592000",
+            "ignorePasswords": true,
+            "monitoring": true,
+            "preserveTagged": true
+         },
+         "entrypoints": {
+            "history": {
+               "preferences": {
+                  "defaultAction": "paste"
+               }
             }
          }
       },
       "core": {
          "entrypoints": {
             "about": {
-               "enabled": false
+               "enabled": true
             },
             "report-bug": {
                "enabled": false
+            },
+            "search-builtin-icons": {
+               "enabled": true
             },
             "sponsor": {
                "enabled": false
@@ -84,6 +144,15 @@
             }
          }
       },
+      "raycast-compat": {
+         "entrypoints": {
+            "store": {
+               "preferences": {
+                  "alwaysShowIntro": false
+               }
+            }
+         }
+      },
       "scripts": {
          "enabled": false
       },
@@ -91,7 +160,18 @@
          "enabled": false
       },
       "system": {
-         "enabled": false
+         "enabled": true,
+         "entrypoints": {
+            "browse-apps": {
+               "enabled": true
+            },
+            "run": {
+               "enabled": true
+            },
+            "set-default-terminal": {
+               "enabled": true
+            }
+         }
       },
       "theme": {
          "enabled": false
